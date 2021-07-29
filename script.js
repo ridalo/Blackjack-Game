@@ -5,13 +5,15 @@ let isAlive = true
 let sum = firstCard + secondCard
 let message = ""
 
-if(sum < 21) {
-    message = "Do you want to draw a new card?"
-    whiteJack = true
-} else if (sum === 21) {
-    message = "You got Blackjack!"
-    hasBlackJack = true
-} else {
-    message = "You have lost..."
-    isAlive = false
+function startGame() {
+    if(sum < 21) {
+        message = "Do you want to draw a new card?"
+        whiteJack = true
+    } else if (sum === 21) {
+        message = "You got Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You have lost..."
+        isAlive = false
+    }
 }
